@@ -8,6 +8,7 @@ Bundle 'gmarik/vundle'
 
 " original repos on github
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-endwise'
 
 
 "ruby
