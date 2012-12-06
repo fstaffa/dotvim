@@ -10,6 +10,7 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-endwise'
 Bundle 'vim-scripts/tComment'
+Bundle 'kien/ctrlp.vim'
 
 
 "ruby
