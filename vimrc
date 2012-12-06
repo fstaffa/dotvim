@@ -29,6 +29,10 @@ if &t_Co > 2 || has("gui_running")
 	syntax on
 	set nohlsearch
 endif
+
+set hidden
+
+
 "velikost indentu
 set shiftwidth=4
 "velikost tabu
@@ -40,9 +44,8 @@ set expandtab
 set softtabstop=4
 set whichwrap=b,s,<,>,h,l
 autocmd FileType text setlocal textwidth=72
-set autowrite
-set writebackup
-set backupdir=~/.vim/backup,.,~/
+
+
 set fileencodings=utf-8,iso-8859-2
 "pocet radku pod a nad editovanym radkem
 set scrolloff=2
@@ -59,3 +62,10 @@ autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
 set novisualbell  " No blinking .
 set noerrorbells  " No noise.
 set list
+
+"backups and saving
+set nobackup
+set noswapfile
+set autowrite
+set writebackup
+set backupdir=~/.vim/backup,.,~/
