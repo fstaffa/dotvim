@@ -23,7 +23,8 @@ autocmd User Rails set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 " vim-scripts repos
 Bundle 'vim-scripts/Specky'
 Bundle 'vim-scripts/tComment'
-"Bundle 'FuzzyFinder'
+
+Bundle 'bbommarito/vim-slim'
 
 filetype plugin indent on
 set number
