@@ -81,6 +81,8 @@ let g:speckyQuoteSwitcherKey = "<C-S>'"
 let g:speckyRunRdocKey       = "<C-S>r"
 let g:speckySpecSwitcherKey  = "<C-S>x"
 let g:speckyRunSpecKey       = "<C-S>s"
-let g:speckyRunRdocCmd       = "fri -L -f plain"
+let g:speckyRunRdocCmd       = "<C-S>h"
 let g:speckyWindowType       = 2
+
+map <F5> <C-S>s
 
