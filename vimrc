@@ -12,11 +12,14 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
 Bundle 'kien/ctrlp.vim'
+Bundle 'kana/vim-textobj-user'
+Bundle 'kana/vim-textobj-entire'
 
 
 "ruby
 Bundle 'tpope/vim-rails.git'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'nelstrom/vim-textobj-rubyblock'
 autocmd FileType ruby,eruby,yaml set tw=80 ai sw=2 sts=2 et
 autocmd FileType ruby,eruby,yaml setlocal foldmethod=manual
 autocmd User Rails set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
