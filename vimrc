@@ -30,6 +30,8 @@ Bundle 'vim-scripts/tComment'
 Bundle 'bbommarito/vim-slim'
 
 filetype plugin indent on
+filetype plugin on
+runtime macros/matchit.vim
 set number
 set showcmd
 set ruler
