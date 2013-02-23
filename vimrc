@@ -15,6 +15,11 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'kana/vim-textobj-user'
 Bundle 'kana/vim-textobj-entire'
 
+"javascript
+Bundle 'kchmck/vim-coffee-script'
+autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
+
 
 "ruby
 Bundle 'tpope/vim-rails.git'
@@ -79,6 +84,12 @@ set noswapfile
 set autowrite
 set writebackup
 set backupdir=~/.vim/backup,.,~/
+
+"movement
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 "specky
 let g:speckyBannerKey        = "<C-S>b"
