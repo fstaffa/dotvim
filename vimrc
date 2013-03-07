@@ -4,6 +4,8 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
+
 Bundle 'gmarik/vundle'
 
 " original repos on github
@@ -17,7 +19,7 @@ Bundle 'kana/vim-textobj-entire'
 
 "javascript
 Bundle 'kchmck/vim-coffee-script'
-autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab tabstop=2 softtabstop=2
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 
 
