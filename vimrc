@@ -37,6 +37,15 @@ Bundle 'vim-scripts/tComment'
 
 Bundle 'bbommarito/vim-slim'
 
+"solarized
+Bundle 'altercation/vim-colors-solarized.git'
+set background=dark
+colorscheme solarized
+if $COLORTERM == 'gnome-terminal'
+  set t_Co=256
+endif
+let g:solarized_termcolors=256
+
 filetype plugin indent on
 filetype plugin on
 runtime macros/matchit.vim
