@@ -106,3 +106,5 @@ let g:speckyWindowType       = 2
 map <F5> <C-S>s
 
 set history=1000
+
+vnoremap . :norm.<CR>
