@@ -28,6 +28,7 @@ au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 Bundle 'tpope/vim-rails.git'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'slim-template/vim-slim'
 autocmd FileType ruby,eruby,yaml set tw=80 ai sw=2 sts=2 et
 autocmd FileType ruby,eruby,yaml setlocal foldmethod=manual
 autocmd User Rails set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
