@@ -36,8 +36,8 @@ autocmd User Rails set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 " vim-scripts repos
 Bundle 'vim-scripts/Specky'
 Bundle 'vim-scripts/tComment'
+Bundle 'scrooloose/nerdtree.git'
 
-Bundle 'bbommarito/vim-slim'
 
 "solarized
 Bundle 'altercation/vim-colors-solarized.git'
