@@ -2,7 +2,14 @@ set nocompatible
 filetype off
 
 set rtp+=~/.local/lib/python2.7/site-packages/powerline/bindings/vim
-set rtp+=~/.vim/bundle/vundle/
+if has('win32') || has('win64')
+  set rtp+=~/vimfiles/bundle/vundle/
+  call vundle#rc('$HOME/vimfiles/bundle/')
+else
+  " Usual quickstart instructions
+  set rtp+=~/.vim/bundle/vundle/
+  call vundle#rc()
+endif
 call vundle#rc()
 
 
@@ -37,6 +44,7 @@ autocmd User Rails set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 Bundle 'vim-scripts/Specky'
 Bundle 'vim-scripts/tComment'
 Bundle 'scrooloose/nerdtree.git'
+Bundle 'vim-scripts/taglist.vim'
 
 
 "solarized
