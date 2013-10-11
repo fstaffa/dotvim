@@ -17,6 +17,7 @@ Bundle 'gmarik/vundle'
 
 " original repos on github
 Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
@@ -24,6 +25,12 @@ Bundle 'tpope/vim-abolish'
 Bundle 'kien/ctrlp.vim'
 Bundle 'kana/vim-textobj-user'
 Bundle 'kana/vim-textobj-entire'
+Bundle 'kien/rainbow_parentheses.vim'
+au VimEnter * RainbowParenthesesToggle
+au BufRead * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
 "javascript
 Bundle 'kchmck/vim-coffee-script'
@@ -31,6 +38,10 @@ Bundle 'pangloss/vim-javascript'
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab tabstop=2 softtabstop=2
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
 
+"clojure
+Bundle 'tpope/vim-fireplace.git'
+Bundle 'tpope/vim-classpath.git'
+Bundle 'guns/vim-clojure-static.git'
 
 "ruby
 Bundle 'tpope/vim-rails.git'
