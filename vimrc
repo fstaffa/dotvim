@@ -26,6 +26,8 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'kana/vim-textobj-user'
 Bundle 'kana/vim-textobj-entire'
 Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'sjl/gundo.vim'
+nnoremap <F4> :GundoToggle<CR>
 au VimEnter * RainbowParenthesesToggle
 au BufRead * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadRound
@@ -51,20 +53,23 @@ Bundle 'slim-template/vim-slim'
 autocmd FileType ruby,eruby,yaml set tw=80 ai sw=2 sts=2 et
 autocmd FileType ruby,eruby,yaml setlocal foldmethod=manual
 autocmd User Rails set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+
 " vim-scripts repos
 Bundle 'vim-scripts/Specky'
 Bundle 'vim-scripts/tComment'
 Bundle 'scrooloose/nerdtree.git'
 Bundle 'vim-scripts/taglist.vim'
 
+"scala
+Bundle 'derekwyatt/vim-scala'
 
 "solarized
 Bundle 'altercation/vim-colors-solarized.git'
 set background=dark
 colorscheme solarized
-if $COLORTERM == 'gnome-terminal'
+"if $COLORTERM == 'gnome-terminal'
   set t_Co=256
-endif
+"endif
 let g:solarized_termcolors=256
 
 filetype plugin indent on
@@ -116,6 +121,7 @@ set nobackup
 set noswapfile
 set autowrite
 set writebackup
+set visualbell
 set backupdir=~/.vim/backup,.,~/
 
 "movement
