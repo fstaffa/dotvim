@@ -55,9 +55,11 @@ autocmd FileType ruby,eruby,yaml setlocal foldmethod=manual
 autocmd User Rails set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
 " vim-scripts repos
+Bundle 'vim-scripts/paredit.vim'
 Bundle 'vim-scripts/Specky'
 Bundle 'vim-scripts/tComment'
 Bundle 'scrooloose/nerdtree.git'
+nnoremap <F3> :NERDTreeToggle<CR>
 Bundle 'vim-scripts/taglist.vim'
 
 "scala
